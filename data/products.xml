@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<products>
+  <product price="150" quantity="3">
+    <film author="Luk Besson" title="Leon" genre="Drama" year="1994"></film>
+  </product>
+
+  <product price="150" quantity="4">
+    <film author="Barry Levinson" title="Raining man" genre="Drama" year="1988"></film>
+  </product>
+
+  <product price="250" quantity="6">
+    <book author="Mark Tven" title="Tom Soyer" genre="Classic"></book>
+  </product>
+
+  <product price="200" quantity="5">
+    <CD author="Judas Priest" title="Turbo" genre="Heavy Metal" year="1986"></CD>
+  </product>
+
+</products>
