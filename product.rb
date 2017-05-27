@@ -67,8 +67,10 @@ class Product
     if @quantity > 0
       puts "\n\rYou bought: #{info}.\n\r"
       @quantity -= 1
+      price
     else
       puts "This Goods are out of stock\n\r"
+      0
     end
   end
 

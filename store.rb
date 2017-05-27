@@ -21,10 +21,9 @@ choice = nil
 until choice == "x" do
   Product.list(products)
   choice = STDIN.gets.chomp
-  if choice.to_i >= 0 && choice.to_i < products.size
+  if choice != 'x' && choice.to_i >= 0 && choice.to_i < products.size
     purchase = products[choice.to_i]
-    purchase.buy
-    total_amount += purchase.price
+    total_amount += purchase.buy
   else
     "Product not found"
   end
