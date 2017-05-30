@@ -4,6 +4,12 @@ file_name = File.dirname(__FILE__) + "/data/products.xml"
 puts "File not found" unless File.exist?(file_name)
 file = File.new(file_name, "r:UTF-8")
 doc = REXML::Document.new(file)
+begin
+  doc = REXML::Document.new(file)
+rescue REXML::ParseException => e
+  abort "Incorrect XML File"
+  e.message
+end
 file.close
 
 choice = nil
